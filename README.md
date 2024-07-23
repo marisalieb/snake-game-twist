@@ -1,26 +1,39 @@
-# Raylib C++ Starter Template
+# Snake Game with a Twist
 
-Raylib C++ Starter Template for Visual Studio Code on Windows.
+Welcome to the Snake Game with a Twist! This project is an exciting variation of the classic Snake game with unique mechanics and features. Developed using raylib which provided the foundation for the interface and some game mechanics.
 
-This demo project contains a bouncing ball raylib example program.
+## Overview
 
-It works with raylib version 4.5.
-Tested on both Windows 10 and Windows 11.
+### Gameplay Elements:
 
-# Video Tutorial
+- Food Item: Each game starts with one food item.
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+- Bomb: Adds an element of danger by shrinking the snake down by 2 spaces upon consumption. If the snake is only 2 spaces long when it hits the bomb, it results in game over.
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+- Obstacle: Hitting the obstacle results in game over.
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.educ8s.tv">My Website</a> | <br>
-</p>
+### Game Mechanics:
 
+- Eating the bomb will decrease the snake’s length by 2 spaces but still counts as a level increment. The food item just increases the level.
+
+- The food, bomb and obstacle items are randomly positioned without overlap.
+
+- The game restarts each time a game over occurs until the player exits the game window.
+
+### Planned Features and Improvements:
+
+- Increasing Obstacles: Future updates will include a function where the number of obstacles increases with each food or bomb item consumed.
+
+- Shrinking Window: Another feature under consideration is a shrinking game window that adjusts with increasing scores.
+
+
+## Development 
+This game is a work in progress. The core mechanics, obstacle and bomb items are implemented. The game will be updated to include dynamic obstacles and a shrinking game window for a more challenging experience.
+
+#
+
+The game was developed using a generic Raylib file setup template by N. Koumaris.
+
+#
+## Example
+![alt text](graphics/screenshot.png)
